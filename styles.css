@@ -1,0 +1,176 @@
+/* Обновленные стили для всего сайта */
+body {
+    font-family: "San Francisco", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Стилизация теней блоков */
+.services-grid div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Тень с более темным цветом */
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.services-grid div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Увеличенная тень с более темным цветом при наведении */
+}
+
+/* Усиление теней в разделах "О нас" и "Контакты" */
+#about, #contact {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4); /* Более темные тени для разделов "О нас" и "Контакты" */
+}
+
+header {
+    background-color: #3f3cee;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* Центрирование заголовка внутри header */
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin: 0; /* Убрать внешние отступы заголовка */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    background-color: #3380e6;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #dfd8d8;
+    font-weight: 600;
+}
+
+/* Обновленные стили для разделов */
+section {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(15, 14, 14, 0.1);
+}
+
+h2 {
+    color: #000;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Стили для ссылок */
+a {
+    color: #0070f3;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для секции "Наши услуги" с использованием CSS Grid */
+.services-grid {
+    display: flex;
+    flex-direction: column; /* Размещение элементов в столбик */
+    align-items: center; /* Выравнивание по центру по горизонтали */
+}
+
+.services-grid img {
+    max-width: 150px; /* You can adjust this value to make the images smaller */
+    height: auto;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.2s;
+    margin: 0 0 20px;
+    max-width: 400px;
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Стилизация кнопки WhatsApp */
+a.whatsapp-link {
+    background-color: #25d366;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+a.whatsapp-link:hover {
+    background-color: #128c7e;
+}
+
+a.phone-link {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.phone-link:hover {
+    background-color: #0056b3;
+}
+
+/* Для мобильной версии, максимальная ширина 600px */
+@media (max-width: 600px) {
+    .service-heading h2 {
+        text-align: center;
+    }
+
+    .services-grid {
+        display: block;
+    }
+
+    .service-item {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .service-item img {
+        max-width: 100%;
+    }
+}
